@@ -6,20 +6,6 @@
     <meta name="keywords" content="ветеринарные клиники Гомеля, ветеринарная клиника Гомель, ветеринарная лаборатория Гомель, лабораторная диагностика Гомель, гематология Гомель, цитология Гомель, биохимия Гомель, вакцинация Гомель, дерматология Гомель, анализ на глисты Гомель, микроскопия на лишай Гомель, пироплазмоз Гомель, микроскопия Гомель, цитология новообразования Гомель, диагностика инфекций Гомель">
     <meta name="description" content="Высокие стандарты диагностики и лечения для вашего «микродруга».">
     <link rel="stylesheet" href="/css/viewer.css">
-    <script type="text/javascript">
-$(document).ready(function(){
-    $("#CntctFrm1").submit(function() {
-            var form_data = $(this).serialize();
-            $.ajax({
-            type: "POST",
-            url: "send.php",
-            data: form_data,
-            success: function() {
-                   alert("Ваше сообщение отпрвлено!");
-            });
-    });
-});
-</script>
 </head>
 <body class="">
 <div id="SITE_CONTAINER">
@@ -342,6 +328,20 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
+                                        <script type="text/javascript">
+$(document).ready(function(){
+    $("#CntctFrm1").submit(function() {
+            var form_data = $(this).serialize();
+            $.ajax({
+            type: "POST",
+            url: "send.php",
+            data: form_data,
+            success: function() {
+                   alert("Ваше сообщение отпрвлено!");
+            });
+    });
+});
+</script>
                                         <div style="top: 37px; left: 140px; width: 350px; position: absolute;"
                                              class="s3" id="WRchTxtu"
                                              data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$c1gzt.1.$WRchTxtu">
