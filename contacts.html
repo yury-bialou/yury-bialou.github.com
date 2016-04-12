@@ -303,7 +303,7 @@
                                         <div style="height: 180px; top: 104px; left: 518px; width: 463px; position: absolute;"
                                              class="s11" data-state="   phoneHidden  addressHidden desktop left"
                                              id="CntctFrm1">
-                                            <div id="CntctFrm1wrapper" class="s11wrapper">
+                                            <form id="CntctFrm1wrapper" class="s11wrapper">
                                                 <ul class="s11_row s11_form">
                                                     <li class="s11_col s11_left"
                                                         data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$c1gzt.1.$CntctFrm1.0.0.0">
@@ -326,11 +326,11 @@
                                                         Отправить
                                                     </button>
                                                 </div>
-                                            </div>
+                                            </form>
                                         </div>
                                         <script type="text/javascript">
 $(document).ready(function(){
-    $("#CntctFrm1").submit(function() {
+    $("#CntctFrm1wrapper").submit(function() {
             var form_data = $(this).serialize();
             $.ajax({
             type: "POST",
