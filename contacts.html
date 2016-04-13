@@ -301,8 +301,8 @@
                                                             placeholder="Тема" id="CntctFrm1subjectField">
                                                     </li>
                                                     <li class="s11_col s11_right">
-                                                        <textarea name="Сообщение" class="s11messageField"
-                                                                  placeholder="Сообщение" id="CntctFrm1messageField" required="required"></textarea>
+                                                        <input name="Сообщение" class="s11messageField"
+                                                                  placeholder="Сообщение" id="CntctFrm1messageField" required="required"/>
                                                     </li>
                                                 </ul>
                                                 <div class="s11_foot">
@@ -321,10 +321,10 @@
 											elements[i].oninvalid =function(e) {
 												if (!e.target.validity.valid) {
 												switch(e.target.id){
-													case 'CntctFrm1nameField' :
-													e.target.setCustomValidity("Пожалуйста, заполните поле имя");break;
+													case 'CntctFrm1messageField' :
+													e.target.setCustomValidity("Пожалуйста, напишите нам.");break;
 													case 'CntctFrm1emailField' :
-													e.target.setCustomValidity("Пожалуйста, заполните поле email");break;
+													e.target.setCustomValidity("Пожалуйста, укажите ваш адрес электронной почты.");break;
 												default : e.target.setCustomValidity("");break;
 
 												}
